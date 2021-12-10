@@ -21,7 +21,12 @@ export class TarefaService {
     localStorage[TarefaService.LISTNAME] = JSON.stringify(tarefas);
   }
 
-  buscarPorId(id: number): Tarefa {
+  /**
+   * Devido ao modo estrito tive de adicionar esse retorno.
+   * @param id 
+   * @returns Tarefa[] ou indefinido
+   */
+  buscarPorId(id: number): Tarefa | undefined {
     const tarefas: Tarefa[] = this.listartodos();
     return tarefas.find((tarefa) => tarefa.id === id);
   }
