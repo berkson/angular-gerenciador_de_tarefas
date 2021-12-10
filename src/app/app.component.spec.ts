@@ -26,10 +26,10 @@ describe('AppComponent', () => {
     expect(app.title).toEqual('Gerenciador de Tarefas');
   });
 
-  // it('should render title', () => {
-  //   const fixture = TestBed.createComponent(AppComponent);
-  //   fixture.detectChanges();
-  //   const compiled = fixture.nativeElement as HTMLElement;
-  //   expect(compiled.querySelector('.navbar-brand a')?.textContent).toContain('Gerenciador de Tarefas');
-  // });
+  it('should render title', () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    fixture.detectChanges();
+    const compiled = fixture.nativeElement as HTMLElement;
+    expect(compiled.querySelector('.navbar-header a')?.textContent).toContain('Gerenciador de Tarefas');
+  });
 });
