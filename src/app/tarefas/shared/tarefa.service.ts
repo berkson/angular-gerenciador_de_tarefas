@@ -23,7 +23,7 @@ export class TarefaService {
 
   /**
    * Devido ao modo estrito tive de adicionar esse retorno.
-   * @param id 
+   * @param id
    * @returns Tarefa[] ou indefinido
    */
   buscarPorId(id: number): Tarefa | undefined {
