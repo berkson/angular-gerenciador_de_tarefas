@@ -1,4 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { FormsModule } from '@angular/forms';
+import { RouterTestingModule } from '@angular/router/testing';
 
 import { EditarTarefaComponent } from './editar-tarefa.component';
 
@@ -8,7 +10,8 @@ describe('EditarTarefaComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ EditarTarefaComponent ]
+      declarations: [ EditarTarefaComponent ],
+      imports: [RouterTestingModule, FormsModule]
     })
     .compileComponents();
   });
